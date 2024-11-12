@@ -17,7 +17,7 @@ Vagrant.configure("2") do |config|
       git_repository: "https://github.com/vBardys/Ansible_roles",
       git_branch: "main"
     }
-
+  end
 
   config.vm.provision "ansible_local" do |ansible|
     ansible.galaxy_role_file = 'requirements.yml'
