@@ -27,7 +27,7 @@ Vagrant.configure("2") do |config|
   end
 
   config.vm.provision "ansible_local" do |ansible|
-    ansible.playbook = "playbook/infrastructure.yml"
+    ansible.playbook = "playbooks/infrastructure.yml"
     ansible.extra_vars = {
       git_repository: "https://github.com/vBardys/Infrastructure",
       git_branch: "main"
